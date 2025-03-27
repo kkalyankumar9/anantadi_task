@@ -3,6 +3,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify';
 
+import GetVideos from './getVideos';
+import VideosUpload from './videosUpload';
+
 
 const Home = () => {
     const token = localStorage.getItem("token");
@@ -29,7 +32,7 @@ const Home = () => {
             toast.success(res.data.msg || "Logout Successful! 🎉", { position: "top-right" });
     
             // Optionally, redirect to login or home page
-            window.location.href = "/login";
+            window.location.href = "/signin";
     
         } catch (error) {
             console.error("Logout Error:", error.response ? error.response.data : error.message);
@@ -52,7 +55,8 @@ const Home = () => {
         </div>       
         
       </div>
-     
+      <VideosUpload/>
+     <GetVideos/>
     </>
   )
 }
