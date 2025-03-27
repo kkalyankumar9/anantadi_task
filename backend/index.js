@@ -20,12 +20,12 @@ app.use("/auth",userAuthRouter)
 app.use("/upload",videosUploadRouter)
 app.use("/videos",videosListRouter)
 
-
-app.listen(8000, async () => {
+const PORT=process.env.PORT
+app.listen(PORT, async () => {
     try {
       await connection;
   
-      console.log(`Connected to the database 8000`);
+      console.log(`Connected to the database ${PORT}`);
     } catch (error) {
       console.error(error);
     }
