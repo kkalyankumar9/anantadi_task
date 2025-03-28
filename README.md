@@ -16,7 +16,6 @@ Node.js | Express | MongoDB ||
 ✅ "To run the backend locally, use:
 npm run server"
 
-## Short Video
 ## Screenshots of Application
 ![image](https://github.com/user-attachments/assets/1ab18831-0859-4c8a-8bf1-9b33c146b09c)
 ## Sign Up
@@ -28,5 +27,7 @@ npm run server"
 ## Displayed videos list
 ![image](https://github.com/user-attachments/assets/be5e0480-c985-41bb-9dae-d8d70daa732c)
 
+## Short Video
+https://drive.google.com/file/d/1wmC4Bgi_r45hdcM-_EXhes17NqgMnXlo/view?usp=sharing
 
 
