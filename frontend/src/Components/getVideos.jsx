@@ -43,7 +43,7 @@ const GetVideos = () => {
   const currentVideos = filteredVideos.slice(indexOfFirstVideo, indexOfLastVideo);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400">
+    <div className="min-h-screen bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 p-4">
 
       {/* Search Filters */}
       <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
@@ -94,7 +94,18 @@ const GetVideos = () => {
               <h2 className="text-lg font-semibold text-gray-800 mt-2">{video.title}</h2>
               <p className="text-gray-600 mt-1">{video.description}</p>
               <p className="text-sm text-gray-500"># <span className="text-gray-700">{video.tags.join(", #")}</span></p>
-              <p className="text-sm text-gray-500 mt-2">Created on: {new Date(video.uploadedAt).toLocaleDateString()}</p>
+            
+              <p className="text-sm text-gray-500 mt-2">
+  Created on: {new Date(video.uploadedAt).toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  })}
+</p>
+
             </div>
           ))}
         </div>

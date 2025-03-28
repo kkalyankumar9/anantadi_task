@@ -29,6 +29,9 @@ const SignUp = () => {
       );
     }
   };
+  const handleback=()=>{
+    navigate(-1)
+  }
 
   return (
     <div className="flex justify-center items-center h-screen bg-gradient-to-r from-purple-500 to-indigo-600">
@@ -69,7 +72,15 @@ const SignUp = () => {
             Sign in
           </Link>
         </p>
+        <button 
+  onClick={handleback} 
+  className=" hover:bg-blue-600  font-semibold py-2 px-4 rounded"
+>
+  Back
+</button>
+
       </div>
+      
     </div>
   );
 };
