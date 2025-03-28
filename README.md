@@ -8,11 +8,11 @@ https://anantadi-task-backend.onrender.com/
 
 ## Tech Stack
 ### Frontend
-React | Tailwind CSS
+React | Tailwind CSS ||
 ✅ "To run the frontend locally, use:
 npm run start"
 ### Backend
-Node.js | Express | MongoDB
+Node.js | Express | MongoDB ||
 ✅ "To run the backend locally, use:
 npm run server"
 
