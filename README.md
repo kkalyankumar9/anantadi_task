@@ -5,7 +5,6 @@ https://anantaditask.netlify.app/
 ## Backend Deployed Link
 https://anantadi-task-backend.onrender.com/
 
-
 ## Tech Stack
 ### Frontend
 React | Tailwind CSS ||
@@ -16,6 +15,8 @@ Node.js | Express | MongoDB ||
 ✅ "To run the backend locally, use:
 npm run server"
 
+## Test Log in 
+Username : kalyan || Password : Kalyan (K is capital in password)
 ## Screenshots of Application
 ![image](https://github.com/user-attachments/assets/1ab18831-0859-4c8a-8bf1-9b33c146b09c)
 ## Sign Up
