@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 import GetVideos from "./getVideos";
@@ -8,6 +8,7 @@ import VideosUpload from "./videosUpload";
 
 const Home = () => {
   const token = localStorage.getItem("token");
+  const navigate=useNavigate("")
   const handleLogout = async () => {
     try {
       const token = localStorage.getItem("token");
@@ -33,9 +34,8 @@ const Home = () => {
       toast.success(res.data.msg || "Logout Successful! ", {
         position: "top-right",
       });
-
+      navigate("/signin")
       // Optionally, redirect to login or home page
-      window.location.href = "/signin";
     } catch (error) {
       console.error(
         "Logout Error:",
