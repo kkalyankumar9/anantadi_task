@@ -9,12 +9,12 @@ https://anantadi-task-backend.onrender.com/
 ## Tech Stack
 ### Frontend
 React | Tailwind CSS
-Frontend run in locally
-npm run start
+✅ "To run the frontend locally, use:
+npm run start"
 ### Backend
 Node.js | Express | MongoDB
-Backend run in locally
-npm run server
+✅ "To run the backend locally, use:
+npm run server"
 
 ## Short Video
 ## Screenshots of Application
